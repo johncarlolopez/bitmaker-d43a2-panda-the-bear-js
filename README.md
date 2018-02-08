@@ -105,7 +105,7 @@ for (var i = 0; i < nodeBioInfo.length; i++) {
 
 ## Day 2
 ___
-```
+
 1.
 ```
 document.querySelectorAll('div div.bar-default')[2].remove();
