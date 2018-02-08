@@ -76,3 +76,34 @@ for (var i = 0; i < nodeBioInfo.length; i++) {
   nodeBioInfo[i].innerHTML = '';
 }
 ```
+1.
+```
+document.querySelectorAll('div div.bar-default')[2].remove();
+```
+
+1.
+```
+var nodePikachu = document.querySelector('[title="Pikachu"]');
+var clonedPikachu = nodePikachu.cloneNode();
+var nodePortfolio = document.querySelector('.portfolio-container');
+nodePortfolio.appendChild(clonedPikachu);
+```
+
+2.
+```
+var listItem = document.createElement('li');
+var leftSpan = document.createElement('span');
+var lastUpdated = document.createTextNode('Page last updated on')
+
+leftSpan.appendChild(lastUpdated);
+listItem.appendChild(leftSpan);
+
+var bioInfo = document.querySelector('ul.bio-info');
+bioInfo.appendChild(listItem);
+
+var rightSpan = document.createElement('span');
+var lastUpdatedValue = document.createTextNode(Date());
+rightSpan.appendChild(lastUpdatedValue);
+listItem.appendChild(rightSpan);
+
+```
